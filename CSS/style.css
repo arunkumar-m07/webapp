@@ -1,106 +1,161 @@
+
 /* Body */
 body {
-    background-color: lightgray;
-    color: black;
-    font-family: Arial;
+    background-color: #111111;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
     margin: 0;
 }
 
 /* Navigation Bar */
 header {
-    background-color: navy;
-    color: white;
+    background-color: #000000;
+    color: #D4AF37;
     padding: 15px;
     position: fixed;
     top: 0;
     width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    border-bottom: 2px solid #D4AF37;
 }
 
 nav a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     margin: 15px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: orange;
+    color: #D4AF37;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, navy, blue);
-    color: white;
+    background: linear-gradient(
+        to right,
+        #000000,
+        #333333
+    );
+    color: #FFFFFF;
     text-align: center;
     padding: 100px 20px;
     margin-top: 60px;
 }
 
+.hero h1 {
+    color: #D4AF37;
+}
+
 /* Buttons */
 .btn {
-    background-color: orange;
-    color: white;
-    padding: 10px 20px;
+    background-color: #D4AF37;
+    color: #111111;
+    padding: 12px 24px;
     border-radius: 5px;
     text-decoration: none;
     margin: 10px;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #FFD700;
+    color: #000000;
 }
 
 /* Tables */
 table {
     width: 100%;
-    background-color: white;
+    background-color: #242424;
+    color: #FFFFFF;
     border-collapse: collapse;
     margin: 20px 0;
-    box-shadow: 2px 2px 5px gray;
-    border-radius: 10px;
+    box-shadow: 2px 2px 5px #000000;
 }
 
 th, td {
-    border: 1px solid gray;
+    border: 1px solid #555555;
     padding: 12px;
     text-align: center;
 }
 
 th {
-    background-color: navy;
-    color: white;
+    background-color: #D4AF37;
+    color: #000000;
 }
 
 /* Forms */
 form {
-    background-color: white;
+    background-color: #242424;
+    color: #FFFFFF;
     padding: 20px;
     margin: 20px;
-    border: 1px solid gray;
+    border: 1px solid #D4AF37;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px #000000;
 }
 
 input, select {
     padding: 10px;
     margin: 8px;
     border-radius: 5px;
-    border: 1px solid gray;
+    border: 1px solid #D4AF37;
+    background-color: #333333;
+    color: #FFFFFF;
 }
 
 /* Cards */
 .card {
-    background-color: white;
+    background-color: #242424;
+    color: #FFFFFF;
     padding: 20px;
     margin: 15px;
-    border: 1px solid gray;
+    border: 1px solid #D4AF37;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px #000000;
+}
+
+.card h2 {
+    color: #D4AF37;
 }
 
 /* Footer */
 footer {
-    background-color: navy;
-    color: white;
+    background-color: #000000;
+    color: #D4AF37;
     text-align: center;
     padding: 20px;
     margin-top: 20px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    box-shadow: 2px 2px 5px gray;
+    border-top: 2px solid #D4AF37;
+}
+
+/* Available Tickets */
+.available {
+    color: #28A745;
+    font-weight: bold;
+}
+
+/* Sold Out Tickets */
+.sold-out {
+    color: #FF4D4D;
+    font-weight: bold;
+}
+
+/* Section Headings */
+h2, h3 {
+    color: #D4AF37;
+}
+
+/* Input Focus */
+input:focus, select:focus {
+    outline: 2px solid #D4AF37;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
