@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Ticket Booking Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>IPL 2026 Ticket Booking</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="index.html#matches">Matches</a> |
+            <a href="booking.html">Book Ticket</a>
+        </nav>
+    </header>
+
+    <!-- Booking Form -->
+    <section id="booking">
+        <h2>IPL Ticket Booking Form</h2>
+
+        <form id="bookingForm">
+
+            <!-- Name -->
+            <label for="name">Full Name:</label><br>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                minlength="3"
+                maxlength="50"
+                pattern="[A-Za-z ]{3,50}"
+                title="Enter 3 to 50 letters and spaces"
+                required>
+            <br><br>
+
+            <!-- Email -->
+            <label for="email">Email Address:</label><br>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+            <br><br>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label><br>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter 10-digit mobile number"
+                pattern="[6-9][0-9]{9}"
+                maxlength="10"
+                title="Enter a valid 10-digit Indian mobile number"
+                required>
+            <br><br>
+
+            <!-- Match Selection -->
+            <label for="match">Choose Match:</label><br>
+            <select id="match" name="match" required>
+                <option value="" selected disabled>
+                    Select a Match
+                </option>
+                <option value="RCB vs CSK">RCB vs CSK</option>
+                <option value="MI vs KKR">MI vs KKR</option>
+                <option value="SRH vs RR">SRH vs RR</option>
+            </select>
+            <br><br>
+
+            <!-- Stand Category -->
+            <label for="stand">Stand Category:</label><br>
+            <select id="stand" name="stand" required>
+                <option value="" selected disabled>
+                    Select Stand
+                </option>
+                <option value="General">General</option>
+                <option value="Premium">Premium</option>
+                <option value="VIP">VIP</option>
+            </select>
+            <br><br>
+
+            <!-- Number of Tickets -->
+            <label for="tickets">Number of Tickets:</label><br>
+            <input
+                type="number"
+                id="tickets"
+                name="tickets"
+                min="1"
+                max="10"
+                placeholder="Enter ticket quantity"
+                required>
+            <br><br>
+
+            <!-- Additional Preference -->
+            <fieldset>
+                <legend>Booking Preference</legend>
+
+                <input
+                    type="radio"
+                    id="online"
+                    name="preference"
+                    value="Online"
+                    checked>
+                <label for="online">Online Ticket</label>
+
+                <input
+                    type="radio"
+                    id="counter"
+                    name="preference"
+                    value="Counter">
+                <label for="counter">Counter Collection</label>
+            </fieldset>
+
+            <br>
+
+            <!-- Terms and Conditions -->
+            <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                value="accepted"
+                required>
+            <label for="terms">
+                I agree to the booking terms and conditions.
+            </label>
+
+            <br><br>
+
+            <!-- Buttons -->
+            <button type="submit">Confirm Booking</button>
+
+            <button type="reset">Reset Form</button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 IPL Ticket Booking Website. All Rights Reserved.</p>
+    </footer>
+<script>
+    document.getElementById("bookingForm").addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        alert("🎉 Booking Successful!\n\nYour IPL tickets have been booked successfully.\nThank you for choosing IPL Ticket Booking!");
+
+        this.reset();
+
+    });
+</script>
+</body>
+</html>
