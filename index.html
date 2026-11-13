@@ -89,7 +89,8 @@
                 <td>800</td>
                 <td>2000</td>
                 <td>5000</td>
-                <td><a href="#booking">Book</a></td>
+                <td><a href="#booking" class="book-btn"
+                data-match="RCB vs CSK">Book</a></td>
             </tr>
 
             <tr>
@@ -100,7 +101,8 @@
                 <td>1000</td>
                 <td>2500</td>
                 <td>6000</td>
-                <td><a href="#booking">Book</a></td>
+                <td><a href="#booking" class="book-btn"
+                data-match="MI vs KKR">Book</a></td>
             </tr>
 
             <tr>
@@ -111,7 +113,8 @@
                 <td>900</td>
                 <td>2200</td>
                 <td>5500</td>
-                <td><a href="#booking">Book</a></td>
+                <td><a href="#booking" class="book-btn"
+                data-match="SRH vs RR">Book</a></td>
             </tr>
         </table>
     </section>
@@ -120,9 +123,9 @@
     <section id="booking">
         <h2>Ticket Booking Form</h2>
 
-        <form>
+        <form id="bookingForm">
             <label>Choose Match:</label>
-            <select>
+            <select id="matchSelect">
                 <option>RCB vs CSK</option>
                 <option>MI vs KKR</option>
                 <option>SRH vs RR</option>
@@ -131,7 +134,7 @@
             <br><br>
 
             <label>Stand Category:</label>
-            <select>
+            <select id="matchSelect">
                 <option>General</option>
                 <option>Premium</option>
                 <option>VIP</option>
@@ -224,6 +227,6 @@
             All Rights Reserved.
         </p>
     </footer>
-     
+     <script src="js/app.js" defer></script>
 </body>
 </html>

@@ -100,24 +100,34 @@
             <br><br>
 
             <!-- Additional Preference -->
-            <fieldset>
-                <legend>Booking Preference</legend>
+            
+<fieldset class="booking-preference">
+    <legend>Booking Preference</legend>
 
-                <input
-                    type="radio"
-                    id="online"
-                    name="preference"
-                    value="Online"
-                    checked>
-                <label for="online">Online Ticket</label>
+    <div class="radio-options">
 
-                <input
-                    type="radio"
-                    id="counter"
-                    name="preference"
-                    value="Counter">
-                <label for="counter">Counter Collection</label>
-            </fieldset>
+        <label class="radio-card" for="online">
+            <input
+                type="radio"
+                id="online"
+                name="preference"
+                value="Online"
+                checked>
+            <span>Online Ticket</span>
+        </label>
+
+        <label class="radio-card" for="counter">
+            <input
+                type="radio"
+                id="counter"
+                name="preference"
+                value="Counter">
+            <span>Counter Collection</span>
+        </label>
+
+    </div>
+</fieldset>
+
 
             <br>
 
@@ -146,16 +156,6 @@
     <footer>
         <p>&copy; 2026 IPL Ticket Booking Website. All Rights Reserved.</p>
     </footer>
-<script>
-    document.getElementById("bookingForm").addEventListener("submit", function(event) {
-
-        event.preventDefault();
-
-        alert("🎉 Booking Successful!\n\nYour IPL tickets have been booked successfully.\nThank you for choosing IPL Ticket Booking!");
-
-        this.reset();
-
-    });
-</script>
+<script src="js/app.js" defer></script>
 </body>
 </html>
