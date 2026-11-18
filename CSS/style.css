@@ -407,3 +407,19 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+/* Activity 7 - Booking Summary */
+
+#bookingSummary {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#bookingSummary p {
+    padding: 10px;
+    border-bottom: 1px solid #D4AF37;
+}
+
+#totalPrice {
+    color: #D4AF37;
+    font-size: 20px;
+}
