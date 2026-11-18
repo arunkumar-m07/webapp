@@ -423,3 +423,73 @@ html {
     color: #D4AF37;
     font-size: 20px;
 }
+/* ================================= */
+/* ACTIVITY 8 - FLEXBOX NAVIGATION */
+/* ================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    margin: 0;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: #D4AF37;
+    color: #111111;
+    border: none;
+    padding: 10px 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+/* ================================= */
+/* ACTIVITY 8 - MATCH GRID */
+/* ================================= */
+
+.match-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.match-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.match-card {
+    background-color: #242424;
+    color: white;
+    border: 1px solid #D4AF37;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.match-card h2,
+.match-card h3 {
+    color: #D4AF37;
+}
+
+.match-card p {
+    margin: 10px 0;
+}
+
+.match-card .btn {
+    display: inline-block;
+}
